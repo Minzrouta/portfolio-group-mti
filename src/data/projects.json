@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Projet 1",
+    "description": "Description courte du premier projet réalisé en cours.",
+    "image": "/images/projects/projet1.png",
+    "link": "https://example.com"
+  },
+  {
+    "title": "Projet 2",
+    "description": "Description courte du deuxième projet réalisé en cours.",
+    "image": "/images/projects/projet2.png",
+    "link": "https://example.com"
+  }
+]

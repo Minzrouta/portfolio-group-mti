@@ -1,0 +1,221 @@
+:root {
+  --color-rose: #f8c8d4;
+  --color-lavande: #d8cff0;
+  --color-peche: #fde8d8;
+  --color-bg: #fdf9f7;
+  --color-text: #3a3a3a;
+  --color-accent: #b8a9d9;
+  --font-body: 'Inter', sans-serif;
+  --font-title: 'Playfair Display', serif;
+  --radius: 16px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Hero ─────────────────────────────────────── */
+
+.hero {
+  background: linear-gradient(135deg, var(--color-rose) 0%, var(--color-lavande) 100%);
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* ── Shared section layout ────────────────────── */
+
+.section {
+  padding: 70px 40px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* ── Team ─────────────────────────────────────── */
+
+.team-section {
+  background: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-card {
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  border: 3px solid var(--color-rose);
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.team-card p {
+  font-size: 0.88rem;
+  color: #999;
+}
+
+/* ── Projects ─────────────────────────────────── */
+
+.projects-section {
+  background: var(--color-peche);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--color-accent);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ── Footer ───────────────────────────────────── */
+
+.footer {
+  background: var(--color-lavande);
+  text-align: center;
+  padding: 24px 40px;
+  font-size: 0.85rem;
+  color: #666;
+}
