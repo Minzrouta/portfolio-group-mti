@@ -9,6 +9,12 @@
     "title": "Sidequest",
     "description": "Projet PLIC sur toute l'année, c'est une application permettant d'organiser des sorties entre amis",
     "image": "/images/projects/sidequest.png",
-    "link": "https://example.com"
+    "link": "https://sidequest.bantou.me/"
+  },
+  {
+    "title": "TakiPipou",
+    "description": "Un projet d'un jour dans le contexte de notre cours d'Angular",
+    "image": "/images/projects/takipipou.png",
+    "link": "https://takipipou.bantou.me"
   }
 ]
